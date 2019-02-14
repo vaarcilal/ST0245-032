@@ -1,0 +1,5 @@
+¿La teoría (notación asintótica) corresponde a lo encontrado de forma experimental al tomar los tiempos de la implementación?
+
+Respuesta:
+
+Sí; según la teoría asintótica, la complejidad del algoritmo es n+c1, siendo n la cantidad de elementos que tiene el arreglo y c1 la condición base. Vemos en la gráfica la línea punteada representando el modelo con regresión lineal, y podemos apreciar que aumenta linearmente concordando con n.
