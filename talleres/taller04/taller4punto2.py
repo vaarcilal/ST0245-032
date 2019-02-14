@@ -6,12 +6,12 @@ import matplotlib.pyplot as plt
 sns.set()
 
 
-def group_sum(start, vol, target):
-    if start == len(vol):
-        return target == 0
+def group_sum(start, vol, target):  #T(n) = 2(n-1) + c
+    if start == len(vol):   #c1
+        return target == 0  #c2
 
     return group_sum(start + 1, vol, target) or \
-           group_sum(start + 1, vol, target - vol[start])
+           group_sum(start + 1, vol, target - vol[start])   #2(n-1) + c3
 
 
 data = []
