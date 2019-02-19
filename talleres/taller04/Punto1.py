@@ -37,4 +37,5 @@ xlabels = range(1,21)
 plt.xticks(xlabels)
 ax.set(xlim=[1, 20], xlabel='Valores de n', ylabel='Tiempo (sg)',
        title='Tiempo vs N')
+plt.savefig("/home/vincent/Documents/RepoDatos/ST0245-032/talleres/taller04/Punto1.png")    
 plt.show()
