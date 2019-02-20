@@ -1,0 +1,10 @@
+public boolean splitArray(int[] nums) {
+  return   fill(0,nums,0,0);
+
+}
+
+public boolean fill(int index,int[] nums,int uno,int dos){
+  if(index >= nums.length) return uno==dos;
+  
+  return fill(index+1,nums,uno+nums[index],dos) || fill(index+1,nums,uno,dos+nums[index]);
+}
