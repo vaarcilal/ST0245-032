@@ -3,4 +3,4 @@ def llenarRect(n):
         return n
     return llenarRect(n-1) + llenarRect(n-2)
 
-print(llenarRect(3))
+print(llenarRect(4))
