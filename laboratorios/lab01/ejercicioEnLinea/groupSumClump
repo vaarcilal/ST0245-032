@@ -1,0 +1,17 @@
+public boolean groupSumClump(int start, int[] nums, int target) {
+  int cont=1;
+  if(start >= nums.length) return target==0;
+  if(start+1 < nums.length){
+  if(nums[start] == nums[start+1]){
+    for(int i =start+1;i<nums.length; i++){
+      if(nums[i] != nums[start]) break;
+      cont++;
+    }
+  }
+  }
+  
+  if(groupSumClump(start+cont,nums,target-nums[start]*cont)) return true;
+  if(groupSumClump(start+cont,nums,target)) return true;
+  
+  return false;
+}
