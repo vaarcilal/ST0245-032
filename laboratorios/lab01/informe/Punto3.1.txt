@@ -1,4 +1,0 @@
-3.1:
-    The asymptotic complexity is: 
-        F(n) = F(n-1) + F(n-2) + c
-
