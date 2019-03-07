@@ -95,7 +95,6 @@ public class LinkedList<T> {
     
     public boolean contains(T val) {
         Node<T> current = head;
-        System.out.println(head.getData());
         for(int i = 1; i < size; i++){
             current = current.getNext();
             if(Objects.equals(current.getData(), val)) {
