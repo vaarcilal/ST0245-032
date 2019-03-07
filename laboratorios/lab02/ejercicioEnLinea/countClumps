@@ -1,0 +1,20 @@
+/*Say that a "clump" in an array isa series of 2 or more adjacent elements of the same value. 
+Return the number of clumps in the given array.*/
+
+public int countClumps(int[] nums) {
+  int clumpCount = 0;
+  int i = 0;
+  while(i<nums.length){
+    int value = nums[i];
+    i++;
+    int span = 1;
+    while(i < nums.length && nums[i] == value){
+      span++;
+      i++;
+    }
+    if(span>1){
+      clumpCount++;
+    }
+  }
+  return clumpCount;
+}
