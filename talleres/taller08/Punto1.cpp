@@ -1,45 +1,45 @@
 #include <bits/stdc++.h>
+#include <boost/algorithm/string.hpp>
 
 using namespace std;
 
-bool isOp(char ch)
+bool isOp(string ch)
 {
-    bool state = false;
     string ops = "+-*/";
-    for (char op : ops) {
-        if (ch == op)
-            state = true;
-    }
-    return state;
+    int algo = ops.find(ch);
+    return algo!=-1;
 }
 
 int evaluar(string st)
 {
     stack<int> numeros;
-    for (char ch : st) {
+    vector<string> vd;
+    boost::split(vd, st, boost::is_any_of(" "));
+    for (string ch : vd) {
+        cout<<ch<<endl;
         if (isOp(ch)) {
-            int a = numeros.top();cout<<a<<" ";
+            int a = numeros.top();
             numeros.pop();
-            int b = numeros.top();cout<<b<<endl;
+            int b = numeros.top();
             numeros.pop();
-            if (ch == '+')
+            if (ch == "+")
                 numeros.push(a + b);
-            if (ch == '-')
+            if (ch == "-")
                 numeros.push(b - a);
-            if (ch == '*')
+            if (ch == "*")
                 numeros.push(a * b);
-            if (ch == '/')
+            if (ch == "/")
                 numeros.push(b / a);
-        } else if (ch != ' ') {
-            numeros.push((int)ch-48);
+        } else if (ch != " ") {
+            numeros.push(stoi(ch));
         }
-        cout<<endl;
     }
     return numeros.top();
 }
 
+
 int main()
 {
-    string st = "6 5 -4 +";
+    string st = "12 5 - 4 +";
     cout<<evaluar(st);
 }
