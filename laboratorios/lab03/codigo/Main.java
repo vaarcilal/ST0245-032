@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.*;
 
 /**
- * This class contains the methods necessary to read doto from a .txt document, transform it into Student objects, add tem to an ArrayList data structure and search said 
+ * This class contains the methods necessary to read dato from a .txt document, transform it into Student objects, add tem to an ArrayList data structure and search said 
  * data tructure by semester and subject.
  *
  * @author Isabel Piedrahita
