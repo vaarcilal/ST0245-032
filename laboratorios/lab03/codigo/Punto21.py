@@ -1,12 +1,22 @@
 """
     Authors: Vincent A. Arcila L.
     Date: 2019-03-23
+
+    Program to convert strings from:
+
+        This_is_a_[Beiju]_text
+        asd[fgh[jkl
+
+    to:
+
+        BeijuThis_is_a__text
+        jklfghasd
 """
 
 import pyllist as ll
 
 
-f = open("casosDePrueba.txt")
+f = open("21pruebas.txt")
 
 def changeState(s):
     if s == "segunda":
