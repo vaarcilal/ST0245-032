@@ -18,12 +18,6 @@ import pyllist as ll
 
 f = open("21pruebas.txt")
 
-def changeState(s):
-    if s == "segunda":
-        return "primera"
-    else:
-        return "segunda"
-
 for i in f.readlines():
     i = i.strip("\n")
     i = i.strip("[")
@@ -42,7 +36,7 @@ for i in f.readlines():
                 state = "segunda"
                 ultima = s
                 continue
-            state = changeState(state)
+            state = "segunda"
             ultima = s
             continue
         elif s == "]":
