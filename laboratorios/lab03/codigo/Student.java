@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Student here.
+ * Class designed to generate object that contain relevan information to the problem.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Isabel Piedrahita.
+ * @version 24/03/2019
  */
 public class Student
 {
