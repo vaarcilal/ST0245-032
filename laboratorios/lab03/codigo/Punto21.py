@@ -1,7 +1,6 @@
 """
-Authors: Vincent A. Arcila L.
-Date: 2019-03-23
-
+    Authors: Vincent A. Arcila L.
+    Date: 2019-03-23
 """
 
 import pyllist as ll
@@ -26,7 +25,7 @@ for i in f.readlines():
     ultima = ""
     for s in i:
         if s == "[":
-            if state == "segunda": #and ultima == "[":
+            if state == "segunda":
                 segunda += primera
                 primera = segunda
                 segunda = ll.dllist()
@@ -57,5 +56,3 @@ for i in f.readlines():
     for i in primera:
         print(i,end="")
     print()
-#print(primera)
-
