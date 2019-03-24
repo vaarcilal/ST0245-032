@@ -1,3 +1,8 @@
+/*
+    Author: Vincent A. Arcila L.
+    Date: 2019-03-23
+*/
+
 #include <boost/algorithm/string.hpp>
 #include <iostream>
 #include <stack>
@@ -70,8 +75,8 @@ int main()
         lugaresBloques[bloque2] = temp2;
     }
     stack<int> otras[cantidad];
-    for(int g =0;g<cantidad;g++){
-        while(!posiciones[g].empty()){
+    for (int g = 0; g < cantidad; g++) {
+        while (!posiciones[g].empty()) {
             otras[g].push(posiciones[g].top());
             posiciones[g].pop();
         }

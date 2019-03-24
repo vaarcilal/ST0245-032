@@ -1,5 +1,5 @@
 """
-Authors: Vincent A. Arcila L. and Isabel Piedrahita Velez
+Authors: Vincent A. Arcila L.
 Date: 2019-03-23
 
 """
