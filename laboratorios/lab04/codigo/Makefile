@@ -1,5 +1,5 @@
 all: sis
 
 sis: sistemaDeArchivos.cpp
-	$(CXX) -g -o  $@ $^
+	$(CXX) -g -Wall -o  $@ $^
 
