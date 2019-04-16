@@ -246,6 +246,8 @@ int main()
     inpFile = inpFileNewName(inpFile);
     this_thread::sleep_for(chrono::milliseconds(400));
     createTree(root, inpFile);
+    command = "rm " + inpFile;
+    system(command.c_str());
     string line;
     cout << "Enter your queries in the following format: Father_directory [>,<] [size] [owner]\n";
     while (getline(cin, line)) {
