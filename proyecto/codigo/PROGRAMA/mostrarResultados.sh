@@ -2,5 +2,5 @@
 
 for i in $(ls *Metros.py)
 do
-    viskd.py $i
+    visbt.py $i
 done 
