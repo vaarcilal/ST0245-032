@@ -26,11 +26,11 @@ public class BicolorableGraph {
             if (graph[thisVertex][thisVertex] == 1) {
                 return false;
             }
-            for (int i = 0; i < v; ++v) {
+            for (int i = 0; i < v; ++i) {
                 if (graph[thisVertex][i] == 1 && colorArr[i] == -1) {
-                    colorArr[v] = 1 - colorArr[thisVertex];
-                    BFSq.add(v);
-                } else if (graph[thisVertex][i] == 1 && colorArr[v] == colorArr[thisVertex]) {
+                    colorArr[i] = 1 - colorArr[thisVertex];
+                    BFSq.add(i);
+                } else if (graph[thisVertex][i] == 1 && colorArr[i] == colorArr[thisVertex]) {
                     return false;
                 }
             }
